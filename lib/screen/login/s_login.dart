@@ -11,40 +11,75 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text("로그인"),
-      ) ,
+      ),
       body: SafeArea(
         child: Container(
           margin: const EdgeInsets.fromLTRB(20, 0, 20, 0),
           width: double.infinity,
-          child: const Column(
+          child: Column(
             children: [
-              InputTextField(hintText: "이메일 또는 ID",),
-              SizedBox(height: 15),
-              InputTextField(hintText: "비밀번호",),
-              SizedBox(height: 15),
-              LoginButton(
+              const InputTextField(hintText: "이메일 또는 ID",),
+              const SizedBox(height: 10),
+              const InputTextField(hintText: "비밀번호",),
+              const SizedBox(height: 15),
+              const LoginButton(
                 title: "로그인",
                 textColor: Colors.white,
                 backgroundColor: Colors.blue,
               ),
-              Separator(),
-              LoginButton(
+              const Separator(),
+              const LoginButton(
                   title: "카카오 로그인",
                   textColor: Colors.black,
                   backgroundColor: Colors.yellow,
               ),
-              SizedBox(height: 10),
-              LoginButton(
+              const SizedBox(height: 10),
+              const LoginButton(
                 title: "네이버 로그인",
                 textColor: Colors.white,
                 backgroundColor: Colors.green,
               ),
-              SizedBox(height: 10),
-              LoginButton(
+              const SizedBox(height: 10),
+              const LoginButton(
                 title: "애플 로그인",
                 textColor: Colors.white,
                 backgroundColor: Colors.black,
               ),
+              Row(
+                children: [
+                  const Expanded(
+                    flex: 1,
+                    child: TextButton(
+                      onPressed: null,
+                      child: Text("아이디 찾기", style: TextStyle(color: Colors.black),),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.black,
+                    width: 1,
+                    height: 15,
+                  ),
+                  const Expanded(
+                    flex: 1,
+                    child: TextButton(
+                      onPressed: null,
+                      child: Text("비밀번호 찾기", style: TextStyle(color: Colors.black),),
+                    ),
+                  ),
+                  Container(
+                    color: Colors.black,
+                    width: 1,
+                    height: 15,
+                  ),
+                  const Expanded(
+                    flex: 1,
+                    child: TextButton(
+                      onPressed: null,
+                      child: Text("회원가입", style: TextStyle(color: Colors.black),),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
