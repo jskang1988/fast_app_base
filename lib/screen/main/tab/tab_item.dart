@@ -1,11 +1,17 @@
 import 'package:melchi_and_pet/common/common.dart';
-import 'package:melchi_and_pet/screen/main/tab/favorite/f_favorite.dart';
 import 'package:melchi_and_pet/screen/main/tab/home/f_home.dart';
 import 'package:flutter/material.dart';
+import 'package:melchi_and_pet/screen/main/tab/profile/f_profile.dart';
+import 'package:melchi_and_pet/screen/main/tab/search/f_search.dart';
+import 'basket/f_basket.dart';
+import 'order_history/f_order_history.dart';
 
 enum TabItem {
-  home(Icons.home, '홈', HomeFragment()),
-  favorite(Icons.star, '즐겨찾기', FavoriteFragment(isShowBackButton: false));
+  orderHistory(Icons.home, '주문내역', OrderHistoryFragment()),
+  basket(Icons.star, '장바구니', BasketFragment()),
+  home(Icons.payment, '홈', HomeFragment()),
+  search(Icons.candlestick_chart, '검색', SearchFragment()),
+  profile(Icons.menu, '프로필', ProfileFragment());
 
   final IconData activeIcon;
   final IconData inActiveIcon;

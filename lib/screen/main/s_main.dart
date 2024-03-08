@@ -1,3 +1,6 @@
+import 'package:after_layout/after_layout.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:melchi_and_pet/common/cli_common.dart';
 import 'package:melchi_and_pet/screen/main/tab/tab_item.dart';
 import 'package:melchi_and_pet/screen/main/tab/tab_navigator.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +15,15 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => MainScreenState();
 }
 
-class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMixin {
+class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMixin, AfterLayoutMixin {
   TabItem _currentTab = TabItem.home;
-  final tabs = [TabItem.home, TabItem.favorite];
+  final tabs = [
+    TabItem.orderHistory,
+    TabItem.basket,
+    TabItem.home,
+    TabItem.search,
+    TabItem.profile,
+  ];
   final List<GlobalKey<NavigatorState>> navigatorKeys = [];
 
   int get _currentIndex => tabs.indexOf(_currentTab);
@@ -157,5 +166,14 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
     for (final _ in tabs) {
       navigatorKeys.add(GlobalKey<NavigatorState>());
     }
+  }
+
+  @override
+  FutureOr<void> afterFirstLayout(BuildContext context) {
+    // 로그인 등등 처리
+    //
+    delay(() {
+      FlutterNativeSplash.remove();
+    }, 1500.ms);
   }
 }
