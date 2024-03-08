@@ -10,7 +10,10 @@ class BasketFragment extends StatefulWidget {
 class _BasketFragmentState extends State<BasketFragment> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      color: Colors.yellow,
+      child: const Placeholder(),
+    );
   }
 }
 

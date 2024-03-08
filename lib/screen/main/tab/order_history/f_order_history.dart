@@ -10,6 +10,9 @@ class OrderHistoryFragment extends StatefulWidget {
 class _OrderHistoryFragmentState extends State<OrderHistoryFragment> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Container(
+      color: Colors.blue,
+      child: const Placeholder(),
+    );
   }
 }

@@ -3,6 +3,7 @@ import 'package:melchi_and_pet/common/widget/round_button_theme.dart';
 import 'package:melchi_and_pet/common/widget/w_round_button.dart';
 import 'package:melchi_and_pet/screen/dialog/d_message.dart';
 import 'package:flutter/material.dart';
+import 'package:melchi_and_pet/screen/login/s_login.dart';
 
 import '../../../dialog/d_color_bottom.dart';
 import '../../../dialog/d_confirm.dart';
@@ -29,6 +30,12 @@ class HomeFragment extends StatelessWidget {
             ],
           ),
           const EmptyExpanded(),
+          RoundButton(
+            text: '로그인 메인화면',
+            onTap: () => Nav.push(const LoginScreen()),
+            theme: RoundButtonTheme.blue,
+          ),
+          const Height(20),
           RoundButton(
             text: 'Snackbar 보이기',
             onTap: () => showSnackbar(context),
