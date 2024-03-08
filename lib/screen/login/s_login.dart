@@ -18,6 +18,7 @@ class LoginScreen extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: [
+              const SizedBox(height: 15),
               const InputTextField(hintText: "이메일 또는 ID",),
               const SizedBox(height: 10),
               const InputTextField(hintText: "비밀번호",),
