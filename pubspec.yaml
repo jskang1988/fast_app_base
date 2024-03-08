@@ -34,6 +34,19 @@ dependencies:
   #splash creator
   flutter_native_splash: ^2.3.0
 
+  #webview
+  webview_flutter:
+  webview_flutter_android:
+  webview_flutter_wkwebview:
+
+  #firebase
+  uni_links: ^0.5.1
+  firebase_remote_config: ^4.3.16
+  firebase_core: ^2.26.0
+  firebase_messaging: ^14.7.18
+  firebase_analytics: ^10.8.8
+  flutter_local_notifications: ^16.3.3
+
   #dart
   meta: ^1.4.0
   quiver: ^3.2.1
@@ -72,7 +85,7 @@ dependencies:
   retrofit: ^4.0.1
   freezed: ^2.3.4
   freezed_annotation: ^2.2.0
-  json_annotation: ^4.8.0
+  json_annotation: ^4.8.1
 
 dev_dependencies:
   flutter_test:

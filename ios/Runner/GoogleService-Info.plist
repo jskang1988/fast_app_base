@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBxVNA6zo2nEZ8T3u8rJtq6Fw0lDUHZT1o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>743987200963</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.fastAppBase</string>
+	<key>PROJECT_ID</key>
+	<string>melchiandpetflutter</string>
+	<key>STORAGE_BUCKET</key>
+	<string>melchiandpetflutter.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:743987200963:ios:1f4faa9b28d98148ed3376</string>
+</dict>
+</plist>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "743987200963",
+    "project_id": "melchiandpetflutter",
+    "storage_bucket": "melchiandpetflutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743987200963:android:2838b498f72574cded3376",
+        "android_client_info": {
+          "package_name": "com.example.fast_app_base"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRIR9eH1vzyYY1acgiP3cfWHuvC4P0lww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
