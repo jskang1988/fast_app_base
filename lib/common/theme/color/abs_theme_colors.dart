@@ -1,7 +1,7 @@
-import 'package:fast_app_base/common/constant/app_colors.dart';
+import 'package:melchi_and_pet/common/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
-export 'package:fast_app_base/common/constant/app_colors.dart';
+export 'package:melchi_and_pet/common/constant/app_colors.dart';
 
 typedef ColorProvider = Color Function();
 

@@ -1,5 +1,5 @@
-import 'package:fast_app_base/screen/main/tab/tab_item.dart';
-import 'package:fast_app_base/screen/main/tab/tab_navigator.dart';
+import 'package:melchi_and_pet/screen/main/tab/tab_item.dart';
+import 'package:melchi_and_pet/screen/main/tab/tab_navigator.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/common.dart';

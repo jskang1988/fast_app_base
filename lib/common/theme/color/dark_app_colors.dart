@@ -1,4 +1,4 @@
-import 'package:fast_app_base/common/theme/color/abs_theme_colors.dart';
+import 'package:melchi_and_pet/common/theme/color/abs_theme_colors.dart';
 import 'package:flutter/material.dart';
 
 class DarkAppColors extends AbstractThemeColors {

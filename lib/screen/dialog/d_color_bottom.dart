@@ -1,4 +1,4 @@
-import 'package:fast_app_base/data/simple_result.dart';
+import 'package:melchi_and_pet/data/simple_result.dart';
 import 'package:flutter/material.dart';
 import 'package:nav/bottom_sheet/modal_bottom_sheet.dart';
 
