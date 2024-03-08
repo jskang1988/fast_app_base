@@ -24,7 +24,7 @@ if (flutterVersionName == null) {
 
 
 android {
-    namespace "com.example.melchiandpet"
+    namespace "com.example.melchi_and_pet"
     compileSdkVersion 33
     ndkVersion flutter.ndkVersion
 
@@ -43,9 +43,9 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.fast_app_base"
+        applicationId "com.example.melchi_and_pet"
         // You can update the following values to match your application needs.
-        minSdkVersion 21
+        minSdkVersion 30
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
