@@ -1,15 +1,17 @@
 import 'package:flutter/services.dart';
 import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 
+enum LoginPlatform {
+  kakao,
+  naver,
+  none,
+}
+
 class KakaoLoginManager {
   Future<void> processKakao() async {
     // 카카오 로그인 구현 예제
-
-// 카카오톡 설치 여부 확인
-// 카카오톡이 설치되어 있으면 카카오톡으로 로그인, 아니면 카카오계정으로 로그인
-
-
-
+    // 카카오톡 설치 여부 확인
+    // 카카오톡이 설치되어 있으면 카카오톡으로 로그인, 아니면 카카오계정으로 로그인
     if (await isKakaoTalkInstalled()) {
       try {
         OAuthToken token = await UserApi.instance.loginWithKakaoTalk();

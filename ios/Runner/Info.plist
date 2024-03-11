@@ -47,6 +47,21 @@
 	<array>
 		<string></string>
 	</array>
+    
+    <!-- naver client_id -->
+    <key>naverConsumerKey</key>
+    <string>E4FJT3BaoEdzuJxYKLBK</string>
+        
+    <!-- naver client_secret -->
+    <key>naverConsumerSecret</key>
+    <string>WXWRA2kS6Z</string>
+    
+    <key>naverServiceAppName</key>
+    <string>멸치앤펫 OAuth2</string>
+    
+    <key>naverServiceAppUrlScheme</key>
+    <string>smelchipet</string>
+    
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

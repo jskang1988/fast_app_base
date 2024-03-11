@@ -3,11 +3,13 @@ import 'dart:ffi';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:melchi_and_pet/screen/login/m_kakao_login.dart';
+import 'package:melchi_and_pet/screen/login/kakao_login_manager.dart';
+
+import 'naver_login_manager.dart';
 
 class LoginScreen extends StatelessWidget {
   KakaoLoginManager kakaoLoginManager = KakaoLoginManager();
-
+  NaverLoginManager naverLoginManager = NaverLoginManager();
   LoginScreen({super.key});
 
   @override
@@ -50,6 +52,7 @@ class LoginScreen extends StatelessWidget {
                 textColor: Colors.white,
                 backgroundColor: Colors.green,
                 onPressed: () {
+                  naverLoginManager.processNaver();
                 },
               ),
               const SizedBox(height: 10),
