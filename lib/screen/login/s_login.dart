@@ -1,9 +1,14 @@
+import 'dart:ffi';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:melchi_and_pet/screen/login/m_kakao_login.dart';
 
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  KakaoLoginManager kakaoLoginManager = KakaoLoginManager();
+
+  LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,28 +28,37 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(height: 10),
               const InputTextField(hintText: "비밀번호",),
               const SizedBox(height: 15),
-              const LoginButton(
+              LoginButton(
                 title: "로그인",
                 textColor: Colors.white,
                 backgroundColor: Colors.blue,
+                onPressed: () {
+                },
               ),
               const Separator(),
-              const LoginButton(
-                  title: "카카오 로그인",
-                  textColor: Colors.black,
-                  backgroundColor: Colors.yellow,
+              LoginButton(
+                title: "카카오 로그인",
+                textColor: Colors.black,
+                backgroundColor: Colors.yellow,
+                onPressed: () {
+                  kakaoLoginManager.processKakao();
+                },
               ),
               const SizedBox(height: 10),
-              const LoginButton(
+              LoginButton(
                 title: "네이버 로그인",
                 textColor: Colors.white,
                 backgroundColor: Colors.green,
+                onPressed: () {
+                },
               ),
               const SizedBox(height: 10),
-              const LoginButton(
+              LoginButton(
                 title: "애플 로그인",
                 textColor: Colors.white,
                 backgroundColor: Colors.black,
+                onPressed: () {
+                },
               ),
               Row(
                 children: [
@@ -93,10 +107,12 @@ class LoginButton extends StatelessWidget {
   final String title;
   final Color textColor;
   final Color backgroundColor;
+  final VoidCallback onPressed;
   const LoginButton({super.key,
     required this.title,
     required this.textColor,
-    required this.backgroundColor});
+    required this.backgroundColor,
+    required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +121,7 @@ class LoginButton extends StatelessWidget {
       height: 45,
       child: ElevatedButton(
         onPressed: () {
-
+          onPressed.call();
         },
         style: ElevatedButton.styleFrom(
             foregroundColor: textColor,

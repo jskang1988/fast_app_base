@@ -137,6 +137,8 @@ PODS:
     - GoogleUtilities/Privacy
   - isar_flutter_libs (1.0.0):
     - Flutter
+  - kakao_flutter_sdk_common (1.9.0):
+    - Flutter
   - keyboard_utils_fork (0.0.1):
     - Flutter
   - nanopb (2.30909.1):
@@ -168,6 +170,7 @@ DEPENDENCIES:
   - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
   - flutter_native_splash (from `.symlinks/plugins/flutter_native_splash/ios`)
   - isar_flutter_libs (from `.symlinks/plugins/isar_flutter_libs/ios`)
+  - kakao_flutter_sdk_common (from `.symlinks/plugins/kakao_flutter_sdk_common/ios`)
   - keyboard_utils_fork (from `.symlinks/plugins/keyboard_utils_fork/ios`)
   - path_provider_foundation (from `.symlinks/plugins/path_provider_foundation/darwin`)
   - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
@@ -210,6 +213,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_native_splash/ios"
   isar_flutter_libs:
     :path: ".symlinks/plugins/isar_flutter_libs/ios"
+  kakao_flutter_sdk_common:
+    :path: ".symlinks/plugins/kakao_flutter_sdk_common/ios"
   keyboard_utils_fork:
     :path: ".symlinks/plugins/keyboard_utils_fork/ios"
   path_provider_foundation:
@@ -245,6 +250,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: bed3a36c04c8552479fbb9b76326e0fc69bddcb2
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   isar_flutter_libs: b69f437aeab9c521821c3f376198c4371fa21073
+  kakao_flutter_sdk_common: 6cc350382c723c0ec6faf44e7c68a22b1c48737b
   keyboard_utils_fork: 9822a78c5ad41829e7918ddfb58fd82ec70ba8e3
   nanopb: d4d75c12cd1316f4a64e3c6963f879ecd4b5e0d5
   path_provider_foundation: eaf5b3e458fc0e5fbb9940fb09980e853fe058b8

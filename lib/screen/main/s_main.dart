@@ -1,5 +1,6 @@
 import 'package:after_layout/after_layout.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:kakao_flutter_sdk/kakao_flutter_sdk.dart';
 import 'package:melchi_and_pet/common/cli_common.dart';
 import 'package:melchi_and_pet/screen/main/tab/tab_item.dart';
 import 'package:melchi_and_pet/screen/main/tab/tab_navigator.dart';
@@ -170,7 +171,8 @@ class MainScreenState extends State<MainScreen> with SingleTickerProviderStateMi
 
   @override
   FutureOr<void> afterFirstLayout(BuildContext context) {
-    // 로그인 등등 처리
+    // 로그인 등등 초기화 처리
+    KakaoSdk.init(nativeAppKey: "9783b5e7c2572c03d59fc84557a6d5e9");
     //
     delay(() {
       FlutterNativeSplash.remove();

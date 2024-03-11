@@ -32,7 +32,7 @@ class HomeFragment extends StatelessWidget {
           const EmptyExpanded(),
           RoundButton(
             text: '로그인 메인화면',
-            onTap: () => Nav.push(const LoginScreen()),
+            onTap: () => Nav.push(LoginScreen()),
             theme: RoundButtonTheme.blue,
           ),
           const Height(20),
