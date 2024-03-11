@@ -86,8 +86,15 @@ dependencies:
   freezed: ^2.3.4
   freezed_annotation: ^2.2.0
   json_annotation: ^4.8.1
+
+  #kakao login
   kakao_flutter_sdk: ^1.9.0
+  
+  #naver login
   flutter_naver_login: ^1.8.0
+
+  #apple login
+  sign_in_with_apple: ^6.0.0
 
 
 
