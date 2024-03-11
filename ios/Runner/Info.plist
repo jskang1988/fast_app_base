@@ -41,27 +41,27 @@
 			</array>
 		</dict>
 	</array>
+	<key>KAKAO_APP_KEY</key>
+	<string>9783b5e7c2572c03d59fc84557a6d5e9</string>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string></string>
+        <!-- common -->
+        <string>kakao9783b5e7c2572c03d59fc84557a6d5e9</string>
+
+        <!-- KakaoTalk login -->
+        <string>kakaokompassauth</string>
+        <string>storykompassauth</string>
 	</array>
-    
-    <!-- naver client_id -->
-    <key>naverConsumerKey</key>
-    <string>E4FJT3BaoEdzuJxYKLBK</string>
-        
-    <!-- naver client_secret -->
-    <key>naverConsumerSecret</key>
-    <string>WXWRA2kS6Z</string>
-    
-    <key>naverServiceAppName</key>
-    <string>멸치앤펫 OAuth2</string>
-    
-    <key>naverServiceAppUrlScheme</key>
-    <string>smelchipet</string>
-    
+	<key>naverConsumerKey</key>
+	<string>E4FJT3BaoEdzuJxYKLBK</string>
+	<key>naverConsumerSecret</key>
+	<string>WXWRA2kS6Z</string>
+	<key>naverServiceAppName</key>
+	<string>멸치앤펫 OAuth2</string>
+	<key>naverServiceAppUrlScheme</key>
+	<string>smelchipet</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

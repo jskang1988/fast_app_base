@@ -13,6 +13,7 @@ class KakaoLoginManager {
     // 카카오톡 설치 여부 확인
     // 카카오톡이 설치되어 있으면 카카오톡으로 로그인, 아니면 카카오계정으로 로그인
     if (await isKakaoTalkInstalled()) {
+      print("카카오 깔림");
       try {
         OAuthToken token = await UserApi.instance.loginWithKakaoTalk();
         print(token.accessToken);
@@ -37,6 +38,7 @@ class KakaoLoginManager {
         }
       }
     } else {
+      print("카카오 안깔림");
       try {
         OAuthToken token = await UserApi.instance.loginWithKakaoAccount();
         print(token.accessToken);
